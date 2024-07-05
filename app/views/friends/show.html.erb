@@ -1,0 +1,19 @@
+<p style="color: green"><% notice %></p>
+<div class="container col-l-8 col-m-10 col-s-12">
+  <div class="card">
+  <h5 class="card-header">Friend</h5>
+  <div class="card-body">
+    <%= render @friend %>
+    <div class="d-flex">
+      <%= link_to "Edit Friend", edit_friend_path(@friend) , class:"btn btn-success m-2" %> 
+      <%= link_to "Friends List", friends_path , class:"btn btn-secondary m-2" %>
+
+      <%= button_to "Destroy Friend", @friend, method: :delete, class:"btn btn-danger m-2" %>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+</div>
